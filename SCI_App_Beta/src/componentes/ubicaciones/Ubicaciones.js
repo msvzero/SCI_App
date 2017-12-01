@@ -44,7 +44,7 @@ export default class Ubicaciones extends Component {
         })
         let { params } = this.props.navigation.state;
         let token = `JWT ${params.token}`;
-        let URL = "http://127.0.0.1:3000/ubicaciones";
+        let URL = "http://192.168.1.101:3000/ubicaciones";
         fetch(URL, {
             method: 'GET',
             headers:{

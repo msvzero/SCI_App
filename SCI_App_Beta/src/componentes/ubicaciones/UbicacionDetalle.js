@@ -62,7 +62,7 @@ export default class UbicacionDetalle extends Component {
         let { params } = this.props.navigation.state;
         let { navigate } = this.props.navigation;
         let token = `JWT ${params.token}`;
-        fetch(`http://127.0.0.1:3000/actuadores/${this.state.actuador}`, {
+        fetch(`http://192.168.1.101:3000/actuadores/${this.state.actuador}`, {
             method: 'PUT',
             headers: {
               'Accept': 'application/json',
@@ -86,7 +86,7 @@ export default class UbicacionDetalle extends Component {
     actualizarDatosUbicacion(){
         let { params } = this.props.navigation.state;
         let token = `JWT ${params.token}`;
-        fetch(`http://127.0.0.1:3000/ubicaciones/${this.state.id}`, {
+        fetch(`http://192.168.1.101:3000/ubicaciones/${this.state.id}`, {
             method: 'PUT',
             headers: {
               'Accept': 'application/json',

@@ -25,7 +25,7 @@ class Login extends Component {
     }
     iniciarSesion(navigate){
         let {email, password } = this.state;
-        let URL = 'http://127.0.0.1:3000/auth/login';
+        let URL = 'http://192.168.1.101:3000/auth/login';
         fetch(URL, {
             method: 'POST',
             headers:{
